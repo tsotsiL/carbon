@@ -82,7 +82,7 @@ func (t *Translator) chooseUnit(unit string, count int64) (string, error) {
 			return strings.Replace(s[1], ":count", strconv.FormatInt(int64(count), 10), 1), nil
 		}
 	}else{
-		return strings.Replace(s[1], ":count", strconv.FormatInt(int64(count), 10), 1), nil
+		return strings.Replace(s[0], ":count", strconv.FormatInt(int64(count), 10), 1), nil
 	}
 	
 
